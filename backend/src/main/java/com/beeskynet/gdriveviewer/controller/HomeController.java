@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/home")
+@RequestMapping("/api")
 public class HomeController {
 
   @Autowired GdriveService gdriveService;
@@ -17,8 +17,8 @@ public class HomeController {
     return gdriveService.map();
   }
 
-  @RequestMapping(path = "/piyo")
-  String piyo() {
-    return gdriveService.piyo();
+  @RequestMapping(path = "/greeting")
+  Map<String, String> piyo() {
+    return gdriveService.greeting();
   }
 }

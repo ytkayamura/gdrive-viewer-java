@@ -8,13 +8,14 @@ import org.springframework.stereotype.Service;
 public class GdriveService {
   public Map<String, String> map() {
     HashMap<String, String> map = new HashMap<>();
-    map.put("key", "value");
-    map.put("foo", "bar");
-    map.put("aa", "bb");
+    map.put("message", "hello world.");
     return map;
   }
 
-  public String piyo() {
-    return "piyo";
+  public Map<String, String> greeting() {
+    HashMap<String, String> map = new HashMap<>();
+    map.put("name", "Taro");
+    map.put("message", "hello");
+    return map;
   }
 }
