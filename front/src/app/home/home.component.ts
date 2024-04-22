@@ -22,14 +22,14 @@ export class HomeComponent implements OnInit {
   }
 
   fetchData() {
-    this.http.get('/api/greeting').subscribe(
-      (data) => {
+    this.http.get('/api/greeting').subscribe({
+      next: (data) => {
         console.info('Data fetched:', data);
         this.apiData = data as Dict<string>;
       },
-      (error) => {
+      error: (error) => {
         console.error('Error fetching data:', error);
-      }
-    );
+      },
+    });
   }
 }
