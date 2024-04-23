@@ -1,7 +1,6 @@
 // home.component.ts
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { FlexLayoutModule } from '@angular/flex-layout';
 
 interface Dict<T> {
   [key: string]: T;
@@ -9,7 +8,7 @@ interface Dict<T> {
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HttpClientModule, FlexLayoutModule],
+  imports: [HttpClientModule],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
