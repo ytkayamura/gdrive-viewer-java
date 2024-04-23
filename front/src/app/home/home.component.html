@@ -1,4 +1,6 @@
 <!--  home.component.html -->
-<div>Name:{{ " " + apiData["name"] }}</div>
-<div>Message:{{ " " + apiData["message"] }}</div>
-<div>age:{{ " " + apiData["age"] }}</div>
+<div fxLayout="column" fxFlexFill fxLayoutAlign="space-around center" >
+  <div fxFlex="none" style="background-color: pink;">Name:{{ " " + apiData["name"] }}</div>
+  <div fxFlex="none">Message:{{ " " + apiData["message"] }}</div>
+  <div fxFlex="none">age:{{ " " + apiData["age"] }}</div>
+</div>
