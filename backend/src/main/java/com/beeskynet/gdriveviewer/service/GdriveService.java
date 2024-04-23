@@ -1,5 +1,6 @@
 package com.beeskynet.gdriveviewer.service;
 
+import com.beeskynet.gdriveviewer.dto.Greeting;
 import java.util.HashMap;
 import java.util.Map;
 import org.springframework.stereotype.Service;
@@ -12,10 +13,7 @@ public class GdriveService {
     return map;
   }
 
-  public Map<String, String> greeting() {
-    HashMap<String, String> map = new HashMap<>();
-    map.put("name", "Taro");
-    map.put("message", "hello");
-    return map;
+  public Greeting greeting() {
+    return new Greeting("Taro", "hello", 14);
   }
 }
