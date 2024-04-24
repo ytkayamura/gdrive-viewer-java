@@ -1,6 +1,8 @@
 <!--  home.component.html -->
-<div>
-  <div style="background-color: pink;">Name:{{ " " + apiData["name"] }}</div>
-  <div>Message:{{ " " + apiData["message"] }}</div>
-  <div>age:{{ " " + apiData["age"] }}</div>
+<div class="container">
+  <div class="row" *ngFor="let data of apiData">
+    <div class="item">Name:{{ " " + data["name"] }}</div>
+    <div class="item">Message:{{ " " + data["message"] }}</div>
+    <div class="item">age:{{ " " + data["age"] }}</div>
+  </div>
 </div>

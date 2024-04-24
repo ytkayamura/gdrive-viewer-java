@@ -1,0 +1,22 @@
+.outbox {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.main-container {
+  height: 100%;
+}
+.header{
+    height: 50px;
+    background-color: lightgreen;
+}
+
+.footer{
+    background-color: lightgreen;
+    height: 30px;
+    text-align: center;
+}
+.header, .footer {
+  width: 100%;
+  z-index: 1; /* Ensure the header and footer are above other elements */
+}

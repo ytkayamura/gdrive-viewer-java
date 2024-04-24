@@ -2,6 +2,7 @@ package com.beeskynet.gdriveviewer.controller;
 
 import com.beeskynet.gdriveviewer.dto.Greeting;
 import com.beeskynet.gdriveviewer.service.GdriveService;
+import java.util.List;
 import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,7 +21,7 @@ public class HomeController {
   }
 
   @GetMapping("/greeting")
-  Greeting greeting() {
+  List<Greeting> greeting() {
     return gdriveService.greeting();
   }
 }
