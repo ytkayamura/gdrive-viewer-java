@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './hoge.component.html',
-  styleUrl: './hoge.component.scss'
+  styleUrl: './hoge.component.scss',
 })
-export class HogeComponent {
-
-}
+export class HogeComponent {}

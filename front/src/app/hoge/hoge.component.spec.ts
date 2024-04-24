@@ -8,10 +8,9 @@ describe('HogeComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [HogeComponent]
-    })
-    .compileComponents();
-    
+      imports: [HogeComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(HogeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
